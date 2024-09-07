@@ -57,7 +57,7 @@ def is_close(a:float, b:float, eps:float=0.01) -> bool:
 def sigmoid(x:float) -> float:
     if x>= 0: 
         return 1/(1 + math.exp(-x))
-    return x/(1 + math.exp(x))
+    return math.exp(x)/(1 + math.exp(x))
 
 def relu(x:float) -> float:
     return max(0, x)
